@@ -15,7 +15,8 @@ makeCacheMatrix <- function(x = matrix()) {
   setinverse <- function(inverse) m <<- inverse
   getinverse <- function() m
   list(set = set, get = get, setinverse = setinverse, getinverse = getinverse)
-  # Special means it stores its inverse / cached
+  # Special means the input matrix stores its inverse / cached, together with getter
+  # and setters 
 }
 
 ## Computes the inverse of the special "matrix" returned by makeCacheMatrix above
