@@ -3,7 +3,6 @@
 ## template provided, filling objective
 
 ## creates a special "matrix" object that can cache its inverse
-
 makeCacheMatrix <- function(x = matrix()) {
   m <- NULL
   # matrix update
@@ -18,7 +17,6 @@ makeCacheMatrix <- function(x = matrix()) {
   list(set = set, get = get, setinverse = setinverse, getinverse = getinverse)
   # Special means it stores its inverse / cached
 }
-
 
 ## Computes the inverse of the special "matrix" returned by makeCacheMatrix above
 cacheSolve <- function(x, ...) {
